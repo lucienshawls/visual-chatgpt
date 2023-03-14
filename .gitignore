@@ -1,0 +1,12 @@
+# Install script
+/install.ps1
+
+# Running script
+/run.ps1
+
+# API text
+/api.txt
+
+# Images
+/image/*
+!image/placeholder.txt
