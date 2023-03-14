@@ -15,7 +15,7 @@ See our paper: [<font size=5>Visual ChatGPT: Talking, Drawing and Editing with V
 ## Updates:
 
 - Add custom GPU/CPU assignment
-- Add windows support
+- Add Windows support
 - Merge HuggingFace ControlNet, Remove download.sh
 - Add Prompt Decorator
 - Add HuggingFace and Colab Demo
@@ -40,26 +40,29 @@ By leveraging **both general and deep knowledge**, we aim at building an AI that
 ## Quick Start
 
 ```
-# clone the repo
+# Clone the repo
 git clone https://github.com/microsoft/visual-chatgpt.git
 
 # Go to directory
 cd visual-chatgpt
 
-# create a new environment
+# Create a new environment
 conda create -n visgpt python=3.8
 
-# activate the new environment
+# Activate the new environment
 conda activate visgpt
 
-#  prepare the basic environments
+# Prepare the basic environments
 pip install -r requirements.txt
 
-# prepare your private OpenAI key (for Linux)
-export OPENAI_API_KEY={Your_Private_Openai_Key}
+# Prepare your private OpenAI key (for Linux)
+export OPENAI_API_KEY={Your_Private_OpenAi_Key}
 
-# prepare your private OpenAI key (for Windows)
-set OPENAI_API_KEY={Your_Private_Openai_Key}
+# Prepare your private OpenAI key (for Windows CMD)
+set OPENAI_API_KEY={Your_Private_OpenAi_Key}
+
+# Prepare your private OpenAI key (for Windows Powershell)
+$env:OPENAI_API_KEY={Your_Private_OpenAi_Key}
 
 # Start Visual ChatGPT !
 # You can specify the GPU/CPU assignment by "--load", the parameter indicates which 
@@ -89,7 +92,7 @@ python visual_chatgpt.py --load "ImageCaptioning_cuda:0,ImageEditing_cuda:0,
 ## GPU memory usage
 Here we list the GPU memory usage of each visual foundation model, you can specify which one you like:
 
-| Foundation Model        | GPU Memory (MB) |
+| Foundation Model       | GPU Memory (MB) |
 |------------------------|-----------------|
 | ImageEditing           | 3981            |
 | InstructPix2Pix        | 2827            |
